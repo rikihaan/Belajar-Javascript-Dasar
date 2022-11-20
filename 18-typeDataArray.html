@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Data Array</title>
+</head>
+<body>
+<script>
+  //membuat array
+  let arrayKosong =[];
+  let arrayNama =["Asep Riki","Dadang Mahmud","Dea Kalila"];
+
+  // menambah array
+  let names=[];
+  names.push("Riki");
+  names.push("Asep","Ganteng");
+  console.table(names);
+
+  /**
+   * OPERASI ARRAY
+   * array.push(value) => untuk memasukan array
+   * array.length => untuk mendapatkan panjang array
+   * array[index] => untuk medapatkan data di posisi index
+   * array[index]="value" => mengubah ddata di posisi index
+   * delete array[index] => untuk menghapus array di posisi index
+   * */
+  let person =[];
+
+//  menambah data array
+  person.push("Riki","Dani","Ujang");
+  console.info(person);
+
+//  mengetahui panjang array
+  console.info(person.length);
+
+//  mendapakan array di posisi index x
+  console.info(person[2]);
+
+//  mengubah data array berdasarkan index
+  person[2]="Sambo";
+  console.info(person);
+
+//  menghapus array
+  delete person[0];
+  console.info(person)
+</script>
+</body>
+</html>

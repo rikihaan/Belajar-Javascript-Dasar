@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+</head>
+<body>
+<script>
+    function input(){
+        const name = prompt("Silahkan Masukan Nama Anda");
+        alert(`Hello ${name}`);
+        const con = confirm("Input Nama Lagi");
+        if (con){
+            input();
+        }
+    }
+    input();
+
+
+</script>
+</body>
+</html>

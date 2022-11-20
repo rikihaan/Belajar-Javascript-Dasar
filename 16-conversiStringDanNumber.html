@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversi String Dan Number</title>
+</head>
+<body>
+<script>
+    /**
+     * saat mendapatkan data dari input user biasanya input berupa string
+     * jika kita ingin menola datanya maka alangkah baik nya di lakukan convesi telebih dahul
+     * parseInt(string) => konvesi string ke number untuk bilangan bulat
+     * parseFloat(string) => konpersi dari string ke number bilangan pecahan
+     * number(string) => konversi dari string ke number bilangan bulat atau pecahan
+     * number.toString() => konversi dari number ke string*/
+
+        // Masalah tanpa conversi
+    const value1 = "1" // string satu
+    const value2 = 1;
+    const sum = value1 + value2;
+    document.writeln(sum); // ekspectasi 2 yang keluar malah 11 ini karena string 1 tambah 1 = 11 (satu-satu)
+
+    // conversi string ke number
+    document.writeln(`<p>${parseInt("1.1")}</p>`); //1
+    document.writeln(`<p>${parseFloat("1.1")}</p>`);// 1.1
+    document.writeln(`<p>${Number("1.1")}</p>`);// 1.1
+
+    //  jika melakukan conversi dan data yng di conversi bukan merupakan data yang valid maka hasilnya NaN
+    document.writeln(`<p>${parseInt("Salah")}</p>`); // NaN
+
+    //ini masih ditolerir karena yang tidak valid ada di baris belakang
+    document.writeln(`<p>${parseFloat("1.1ups")}</p>`);//1.1
+
+    // number tidak akan mentolerir kesalahan data , beda dengan parseIn(),pasrseFloat()
+    document.writeln(`<p>${Number("1.1ups")}</p>`); // NaN
+    document.writeln(`<p>${Number("1x")}</p>`); // NaN
+    document.writeln(`<p>${Number("Bukan number Beb")}</p>`); // NaN
+
+    // Operasi NaN , NaN di operasikan dengan bilangan apapun hasilnya akan selalu NaN
+    const value3 = Number("90aa");
+    const value4 = 100;
+    const jumlah = value3 + value4;
+    document.writeln(jumlah);
+
+
+</script>
+</body>
+</html>

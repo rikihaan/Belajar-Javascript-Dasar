@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>undefined</title>
+</head>
+<body>
+<script>
+    /**
+     * undefined adalah sebuah type data undefined
+     * variable yang belum di beri nilai maka variable nya undefined*/
+    let name = "EKO";
+    if (name === undefined){
+        alert('UNDEFINED');
+    }else{
+        alert('DEFINED');
+    }
+
+    //UNDEFINED ARRAY VALUE
+    const names = ["Eko","Kurniawan","Khannedy","Riki"];
+    if(names[3]===undefined){
+        alert("Hello World");
+    }else{
+        alert(`Hello ${names[3]}`);
+    }
+
+    //UNDEFINED OBJECT PROPERTY
+    let Person ={
+        name:"Asep Riki Ganteng"
+    };
+    if (Person.name === undefined){
+        alert("Hello Object")
+    }else {
+        alert(`Hello Object ${Person.name}`)
+    }
+
+</script>
+</body>
+</html>

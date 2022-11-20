@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Template</title>
+</head>
+<body>
+<script>
+    /**
+     * Tanpa string template untuk mengabung dua buah data string atau lainnya harus menggunakan +
+     * Dengan string template kita bisa mensubtitusi data variable ke dalam string tanpa harus menggabungakan dengan operator +
+     * bahkan string template bisa di gunakan untuk operasi matematika*/
+
+        // tanpa string template
+    const fullName = "Nama :" + "Asep Riki";
+    document.writeln(fullName);
+
+    // dengan string template
+    let nilai = 78;
+    let absen = 90;
+    let hasil = `
+Hasil nilai anda adalah = ${nilai}
+dan nilai absen anda adalah : ${absen}
+jadi total score anda : ${nilai + absen}`;
+    document.writeln("<pre>")
+    document.writeln(hasil);
+    document.writeln("</pre>")
+
+</script>
+</body>
+</html>

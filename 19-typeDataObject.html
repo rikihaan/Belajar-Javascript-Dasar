@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type Data Object</title>
+</head>
+<body>
+<script>
+    /**
+     * Dibahasa pemerograman PHP  ada fitur array asosiatip atau array yng memiliki index berupa string
+     * di java script array asosiatif tidak di dukung, saat kita paksa coba membuat data array dengan index selain number
+     * maka javascript akan otomatis meconversi jadi type data object
+     * ini akan berbahaya karena mungkin ada fitur array yang tidak bisa di guanakan pada object
+     * */
+
+        // membuat object kosong
+    const orang = {};
+
+    // operasi object
+    // Menambah data object
+    orang["nama"] = "Asep Riki";
+    orang["alamat"] = "Kp. Siliwangi";
+    orang["umur"] = 29;
+    console.table(orang);
+    // menguabah
+    orang["nama"] = "Joko Tingkir";
+    console.table(orang);
+
+    // menghapus data object
+    delete orang["umur"];
+    console.table(orang)
+
+    // MEMBUAT OBJECT DENGAN PROPERTIES
+    const Person = {
+      name:"Riki",
+      alamat:"Kp. Siliwangi",
+      umur:29
+    }
+    console.table(Person);
+
+    // MENGAKSES PROPERTIES OBJECT
+     console.info(`Nama : ${Person.name}`);
+     console.info(`Alamat : ${Person.alamat}`);
+     console.info(`Umur : ${Person.umur}`);
+</script>
+</body>
+</html>
