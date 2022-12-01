@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Break dan Continue</title>
+</head>
+<body>
+<script>
+    /**
+     * pada switch statement, kita sudah mengenal yang kata kunci break. yaitu menghentikan case dalam swicth
+     * Sama pada perulangan, break juga digunakan untuk menghentikan seluruh perulangan.
+     * Namun berbeda dengan continue, continue digunakan untuk menghentikan perulangan saat ini, lalu melanjutkan ke perulangan berikutnya*/
+
+    //kode break
+    let counter = 1;
+    while (true){
+        document.writeln(`<p>Perulangan ke-${counter}</p>`);
+        counter++;
+        if (counter > 10){
+            break;
+        }
+    }
+
+    // kode continue
+    for (let counter1=1; counter1 <=100;counter1++){
+        if (counter1 % 2 ===0){
+            continue;
+        }
+        document.writeln(`<p>Counter Ke-${counter1}</p>`)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Falsy dan Trutry</title>
+</head>
+<body>
+<script>
+  /**
+   * nilai true atau false bukan hanya dari data bollean saja kalau di javascrpt ada beberapa data diluar boolean yang di anggap truty atau falsy
+   * di antaranya :
+   * data data yang d anggap false :
+   * 1. false => boolean
+   * 2. 0,-0 => number 0 dan -0 akan di anggap false
+   * 3. null => akan di anggap false
+   * 4. undefined => akan di anggap false
+   * 5. NaN => akan di anggap false
+   *
+   * Sedangakan data truty adalah data kebalikan dari falsy
+   * misal 1 => dianggap true
+   * */
+
+  let data = 1;
+  if(data){
+    alert("Truty");
+  }else{
+    alert("Falsy");
+  }
+</script>
+</body>
+</html>

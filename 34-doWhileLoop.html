@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do While Loop</title>
+</head>
+<body>
+<script>
+  /**
+   * Do While loop adalah perulangan yang mirip dengan while loop
+   * perbedaan hanya pada pengecekan kondisi
+   * pengecekan kondisi di while loop di lakukan di awal sebeleum perulangan di lakukan, sedangkan di do while loop di lakukan setelah perulangan di lakukan
+   * oleh karena itu dalam do while loop, minimal pasti sekali perulangan di lakukan walau kondisi tidak bernilai true (false)*/
+
+  //counter di lakukan sekali walau kondisi bernilai false
+  let counter1=100;
+  do{
+    document.writeln(`<P>sekali di cetak karena kondisi bernilai false</P>`);
+    counter1++;
+  }while (counter1 <=10);
+
+  //dengan kondisi bernilai true
+  let counter2 = 1;
+  do{
+    document.writeln(`<p>do while ke ${counter2}</p>`);
+    counter2++
+  }while (counter2 <= 10);
+</script>
+</body>
+</html>

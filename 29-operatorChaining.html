@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Chaining</title>
+</head>
+<body>
+<script>
+    /**
+     * Optional operator chaining
+     * optioanl chainng operator (?) merupakan operator ynag digunakan untuk mengamankan ketika kita ingin mengakses property sebuah object dari nullsh
+     * jika kita mencoba mengakses property dari sebuah object dari data nullish tanpa menggunakan operator chaining , maka akan terjadi error
+     * */
+
+        // kode error mengakses property nulllish
+        // let Person = {};
+        // alert(Person.address.country);
+
+        // pengecekan menggunakan if
+    let Person = {
+            address: {
+                country: null
+            }
+        };
+    let say;
+    if (Person.address !== undefined && Person.address !== null) {
+        say = Person.address.country;
+    }
+    alert(say);
+
+    //menggunakan optional chaining
+    let Person2 = {
+            address :{
+                country : "Amerika"
+            }
+    }
+
+    alert(Person2?.address?.country);
+</script>
+</body>
+</html>

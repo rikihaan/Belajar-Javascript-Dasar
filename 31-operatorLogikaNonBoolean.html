@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Lpogika Di non Boolean</title>
+</head>
+<body>
+<script>
+    /**
+     * Sebleumny kita sudah tau bahw operator logika di gunakan untuk membandingkan dua buah data boolean
+     * di javascript kita bisa menggunakan operator logika untuk tipe data non Boolean
+     * ======= OPERATOR OR ||
+     * Opreator Logika OR || mambaca dari kiri ke kanan
+     * operator ini akan mengambil  nilai pertama yang tryty
+     * jika tidak ada satupun yang bernilai  truty, maka yang terakhir yan akan di ambil*/
+
+    // operator OR ||
+    console.info("Hello" || ''); // OR
+    console.info(""||[])// []
+    console.info("0" || "Nol") // "0"
+    console.info(0 || "Nol") //
+    console.info(null || "Null")// Null
+    console.info(undefined || "Undefined") // null
+
+    /**
+     * OPERATOR AND &&
+     * operator logika AND &&, membaca dai kiri kekanan
+     * operator ini akan mengambil nilai pertama yang falsy
+     * jika tidak ada satupun yang benilai falsy, maka nilai terakhir yang akan di ambil*/
+    console.info("Operator AND &&0");
+    console.info("hello" && '') // ''
+    console.info("" && [])// ""
+    console.info("0" && "Nol") // "Nol"
+    console.info(0 && "NOl") // 0
+    console.info(null && "NULL")// null
+    console.info(undefined && "UNDEFINED"); // undefined
+    console.info("undefined" && "null"); // null
+
+</script>
+</body>
+</html>

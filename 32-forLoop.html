@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Loop</title>
+</head>
+<body>
+<script>
+    /**
+     * forloop adalah salah satu kata kunci yang bisa digunakan untuk melakukan perulangan
+     * block kode yang terdapat di dalam for akan selalu di ulangi selama kondisi for terpenuhi (bernilai true
+     * init statement akan sekali di eksekusi pada awal perulangan
+     * kondisi akan di cek dalam setiap perulangan, jika true perulangan akan di lanjutkan, dan jika false perulangan akan di hentikan
+     * post statement akan di eksekusi setiap akhir perulangana
+     * init statement, kondisi dan post statement tidak wajib diisi, jika tidak di isi , perarti perulangan akan selalu bernilai true
+     * */
+
+    // perulangan dengan kondisi
+    let counter1 = 1;
+    for (;counter1<=10;){
+        document.writeln(`<P>Perulangan ${counter1}</P>`);
+        counter1++;
+    }
+
+    // perulangan dengan init statemnt
+    for (let counter2 = 1; counter2 <= 10;){
+        document.writeln(`<p>Perulaangan init ke ${counter2}</p>`);
+        counter2++;
+    }
+
+    //perulangan dengan post statement
+    for (let counter3 = 1; counter3 <=10;counter3++){
+        document.writeln(`<p>Post statement ke ${counter3}}</p>`);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Operator</title>
+</head>
+<body>
+<script>
+    /**
+     * In Operator adalah operator yang digunakan untuk mengecek sebuah propery object ada atau tidak
+     * jika property tersebut ada maka hasilnya adalah true, jika tidak ada maka hasilnya false
+     * tidak hanya bisa digunakan untuk objec tapi juga bisa digunakan untuk mengecek indek array*/
+    // membuat object
+    const Person = {
+            firstName: "Asep",
+            lastName: "Riki"
+        }
+    const result = "firstName" in Person; //true
+    document.writeln(result);
+
+    const result2 = "namaDepan" in Person; //false
+    document.writeln(result2)
+
+    /**
+     * Peringatan !!!
+     * Inoperator hanya untuk digunaka mengecek property atau index bukan valuenya
+     * jadi jika property atau index nilai nya kosong atau undefined maka akan tetap dia anngap ada (true)*/
+</script>
+</body>
+</html>
