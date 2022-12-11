@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of</title>
+</head>
+<body>
+<script>
+  /**
+   * jika for In di gunakan untuk melakukan iterasi terhadap property object dan juga index dari array
+   * For Of di gunakan untuk melakukan interasi terhada value dari iterable object, seperti array, string dan lain lain
+   * For OF tidak bisa di gunakan untuk melakukan iterasi data object, karena object bukanlah iterable*/
+
+  // for Of di array
+  const names =["Asep","Riki","Hari"];
+  for (const name of names){
+    document.writeln(`<p>${name}</p>`);
+  }
+
+  // for of di string
+  const name = "Asep Riki";
+  for (const char of name){
+    if(char =="A"){
+      alert('Mengandung Huruf a')
+    }
+    document.writeln(`<p>${char}</p>`)
+  }
+
+  // mencoba for of di data object
+  let Person ={
+    lastName:"Riki",
+    middleName: "Asep",
+    lastName:"Hari"
+  }
+
+  // ini error Person is not iterable
+  // for(const name of Person){
+  //   document.writeln(`<p>${name}</p>`)
+  // }
+</script>
+</body>
+</html>

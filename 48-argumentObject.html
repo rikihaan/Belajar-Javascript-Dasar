@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Argument Object</title>
+</head>
+<body>
+<script>
+  /**
+   * sebelumnnya kita sudah mengetahui rest parameter, di javascript ada fitur yang bernama argument object
+   * ini adalah fitur dimana kita bisa mengambil semaua parameter dalam bentuk array dengan menggunkan object bernama arguments object*/
+
+  //kode argument object
+  function oldSum(){
+    let total =0;
+    for (const item of arguments){
+      total += item;
+    }
+    console.info(`total is ${total}`);
+
+  }
+
+  // memangil function
+  oldSum(10,20,30,40,50);
+
+  // untuk javascript terbaru menyarankan tidak menggunakan object argument bawaan javascript, tapi lebih di sarankan menggunkan rest parameter
+</script>
+</body>
+</html>

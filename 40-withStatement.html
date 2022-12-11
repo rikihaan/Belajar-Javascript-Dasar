@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With Statement</title>
+</head>
+<body>
+<script>
+  // with statement di gunakan untuk menurunkan sebuah scope data
+
+  // tanpa with statement
+  const Person ={
+    firstName:"Asep",
+    middleName:"Riki",
+    lastName: "Hari"
+  }
+
+  console.info(Person.firstName);
+  console.info(Person.middleName);
+  console.info(Person.lastName);
+
+  // dengan with statement
+  with (Person){
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+  }
+
+
+
+</script>
+</body>
+</html>

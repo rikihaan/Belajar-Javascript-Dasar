@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Parameter Function</title>
+</head>
+<body>
+<script>
+  /**
+   * default value parameter
+   * parameter itu optional, jika parameter tidak di isi nilai nya otomatis argument di function nya bernilai undefined
+   * di paramete function juga bisa kita beri nilai default value, artinya saat pemanggilan function dsan tidak  emngirimkan parameter ,
+   * maka secara otomatis default value parameternya akan di gunakan
+   * */
+
+  //kode default Parameter
+  function registration(name,gender="UNKNOWN"){
+    console.info(name);
+    console.info(gender);
+  }
+
+  // panggil
+  registration("Asep","Riki")
+  registration("Nanang",undefined)
+  registration("Nanang","Kosim")
+</script>
+</body>
+</html>

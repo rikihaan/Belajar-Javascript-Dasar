@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Return Value</title>
+</head>
+<body>
+<script>
+    /**
+     * Secara default,function tidak menghasilkan value apapun, nammun jika kita ingin, kita bisa mebuat sebuah function yang mengembalikan value
+     * agar function mengembalikan value, kita bisa menggunkan kata kunci return di dalam block function nya di ikuti dengan value yang akan di hasilkan nya
+     * */
+    //membuat function dengan parameter dasn return value
+    function sayHello(firstName, lastName) {
+        const say = `Hello ${firstName} ${lastName}`;
+        return say;
+    }
+
+    // memanggil dan menangkap value yang di kembalikan oleh function
+    let result = sayHello("Asep", "Riki");
+    document.writeln(`<p>${result}</p>`);
+
+    // function reteturn value lebih dari satu
+    function getFinalScore(value) {
+        if (value > 90) {
+            return "A"
+        } else if (value > 80) {
+            return "B"
+        } else if (value > 70) {
+            return "C"
+        } else if (value > 60) {
+            return "D"
+        } else {
+            return "E"
+        }
+    }
+
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(91)}</p>`)
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(90)}</p>`)
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(80)}</p>`)
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(70)}</p>`)
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(60)}</p>`)
+    document.writeln(`<p>Nilai Anda Adalah ${getFinalScore(50)}</p>`)
+
+    /**
+     * menhentikan exsekusi program dengan return value
+     * saat kita menggunakan return value maka kode seteleh return va;ue tidak akan di exsekusi
+     * kita bisa menggunkan return value untuk menghentikan eksekussi sebuah function
+     * */
+
+    function isContains(array,searchValue){
+        for (const element of array){
+            console.info(element)
+            if (element === searchValue){
+                return true;
+                console.info('mulsi dari bari ini tidak akan di eksekusi')
+            }
+        }
+
+        return false;
+    }
+
+    let hasil = isContains([1,2,3,4,5,6,7,8,9,10],5);
+    console.info(hasil);
+
+
+
+
+</script>
+</body>
+</html>

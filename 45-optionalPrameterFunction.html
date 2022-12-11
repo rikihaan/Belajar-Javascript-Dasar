@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optional Parameter Function</title>
+</head>
+<body>
+<script>
+  /**
+   * Secara default, parameter di function itu optionl(tidak wajib)
+   * artinya kita tidak wajib mengisi parameter saat memanggil function
+   * jika tidak ada value yg di kirimkan  ke parameter ketika memanggil function, maka secara otomatis parameternya bernilai undefined*/
+
+  // code iptional parameter
+  function sayHello(firstName,middleName,lastName){
+    console.info(firstName);
+    console.info(middleName);//undefined
+    console.info(lastName);// undefined
+  }
+
+  sayHello("Asep")
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With statement ambigu</title>
+</head>
+<body>
+<script>
+    /**
+     * walaupun with statement sangat menarik, namu kebayakan orang tidak menyarankan untuk menggunakan with statemnt
+     * hal ini di karenakan masalah scope statement, mengenai scopny, jika ada properti dan variable atau contant yang sama maka ini akan membuat ambigu
+     * */
+
+
+        // contoh with statemnt ambigu
+    const Person = {
+            firstName: "Asep",
+            middleName: "Riki",
+            lastName: "Hari"
+        }
+
+        // dan misalkan ada varible atau constanta yang memiliki nama sama dengan properti
+    const firstName="Dadang";
+    const lastName="Ujang";
+
+    document.writeln(`<p>${firstName}</p>`)
+    document.writeln(`<p>${lastName}</p>`)
+
+    with (Person){
+        document.writeln(`<p>${firstName}</p>`)
+        document.writeln(`<p>${middleName}</p>`)
+        document.writeln(`<p>${lastName}</p>`)
+    }
+
+
+</script>
+</body>
+</html>

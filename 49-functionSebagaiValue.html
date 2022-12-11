@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Sebagai Value</title>
+</head>
+<body>
+<script>
+  /**
+   * function tidak hanya bisa digunakan sebagai kode program yang di eksekusi,tapi juga bisa sebagai value
+   * artinya function bisa di simpan dalam sebuah variable*/
+
+  function sayHello(name){
+    console.info(`Hello ${name}`);
+  }
+
+  // memasukan function ke dalam variable
+  let say = sayHello;
+
+  sayHello("Asep Riki");
+  say("Budi Nugraha");
+
+  // function juga bisa di kirim lewat parameter kepada function lain
+  function giveMeName(callback){
+    callback("Riki");
+  }
+
+  giveMeName(say)
+  giveMeName(sayHello)
+
+  giveMeName(function (name){
+    console.info(name)
+  })
+</script>
+</body>
+</html>
